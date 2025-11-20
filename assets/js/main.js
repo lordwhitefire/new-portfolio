@@ -89,7 +89,7 @@
     var slider = new Swiper('.slider-active', {
         speed: 600,
         effect: "fade",
-        loop: true,
+        loop: false,
         navigation: {
           nextEl: '.slider-active .swiper-button-next',
           prevEl: '.slider-active .swiper-button-prev',
@@ -141,7 +141,7 @@
         Tab Carousel Activation
     -----------------------------------*/
     var workCarousel = new Swiper('.tab-carousel .swiper-container', {
-        loop: true,
+        loop: false,
         slidesPerView: 4,
         spaceBetween: 1,
 
@@ -257,7 +257,7 @@
         Testimonial Carousel Activation 
     -----------------------------------*/
     var testimonialCarousel = new Swiper('.testimonial-carousel .swiper-container', {
-        loop: true,
+        loop: false,
         slidesPerView: 2,
         spaceBetween: 30,
         pagination: {

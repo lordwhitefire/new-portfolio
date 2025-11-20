@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/icofont/1.0.1/css/icofont.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css">
-
+    <link rel="stylesheet" href="https://unpkg.com/@icon/icofont@1.0.1-alpha.0/icofont.css">
 
 
     
@@ -47,7 +47,7 @@
 
                     <!-- header Logo Start -->
                     <div class="logo-box">
-                        <div class="logo"><a href="index.html"><img src="assets/images/logo.png" alt="" title=""></a></div>
+                        <div class="logo"><a href="index.html"><img id="main-logo" src="assets/images/logo.png" alt="" title=""></a></div>
                     </div>
                     <!-- header Logo end -->
 
@@ -69,7 +69,7 @@
                     <a href="javascript:;" class="menu-close"><i class="ion-ios-close-outline"></i></a>
                 </div>
                 <div class="logo">
-                    <a href="index.html"><img src="assets/images/logo-2.png" alt="Logo"></a>
+                    <a href="index.html"><img id="mobile-logo" src="assets/images/logo-2.png" alt="Logo"></a>
                 </div>
                 <div class="primary-menu">
                     <ul>
@@ -114,7 +114,7 @@
             <div class="slider-active swiper-container">
                 <div class="swiper-wrapper">
 
-                    <div class="swiper-slide single-slider d-flex align-items-center animation-style-01" style="background-image: url(assets/images/slider/slider-1.jpg);">
+                    <div class="swiper-slide single-slider d-flex align-items-center animation-style-01" style="background-image: url(assets/images/slider/slider-1.jpg);"  id="slide-bg-1">
 
                         <span class="line"></span>
                         <span class="line"></span>
@@ -123,16 +123,16 @@
                         <div class="container">
                             <!-- Slider Content Start -->
                             <div class="slider-content">
-                                <h4 class="sub-title">Latest project</h4>
-                                <h1 class="main-title">Interior Decoration <br>  Website</h1>
-                                <p>This is my first multi-page website. <br> Inspired by Bilal Asghar’s design, I created a responsive <br> and user-friendly interface to showcase stylish interior designs.</p>
-                                <a class="slider-btn" href="https://interior-deco-kappa.vercel.app/">See project</a>
+                                <h4 class="sub-title"  id="slide-subtitle-1">Latest project</h4>
+                                <h1 class="main-title" id="slide-title-1" >Interior Decoration <br>  Website</h1>
+                                <p id="slide-desc-1">This is my first multi-page website. <br> Inspired by Bilal Asghar’s design, I created a responsive <br> and user-friendly interface to showcase stylish interior designs.</p>
+                                <a class="slider-btn" href="https://interior-deco-kappa.vercel.app/" id="slide-link-1" > <span id="slide-btn-1">See project</span></a>
                             </div>
                             <!-- Slider Content End -->
                         </div>
                     </div>
 
-                    <div class="swiper-slide single-slider d-flex align-items-center animation-style-01" style="background-image: url(assets/images/slider/slider-1.jpg);">
+                    <div class="swiper-slide single-slider d-flex align-items-center animation-style-01" style="background-image: url(assets/images/slider/slider-1.jpg);" id="slide-bg-2">
 
                         <span class="line"></span>
                         <span class="line"></span>
@@ -141,16 +141,16 @@
                         <div class="container">
                             <!-- Slider Content Start -->
                             <div class="slider-content">
-                                <h4 class="sub-title">Project Showcase</h4>
-                                <h1 class="main-title">My Old <br> Portfolio </h1>
-                                <p>This was my very first attempt at showcasing my work. <br> Looking back, it reminds me of how far I’ve come as a   <br> web developer. My skills have grown, and my designs have evolved <br > to be more creative and professional.</p>
-                                <a class="slider-btn" href="https://tailwind-web-portfolio.vercel.app/">See project</a>
+                                <h4 class="sub-title" id="slide-subtitle-2">Project Showcase</h4>
+                                <h1 class="main-title" id="slide-title-2">My Old <br> Portfolio </h1>
+                                <p id="slide-desc-2">This was my very first attempt at showcasing my work. <br> Looking back, it reminds me of how far I’ve come as a   <br> web developer. My skills have grown, and my designs have evolved <br > to be more creative and professional.</p>
+                                <a class="slider-btn" href="https://tailwind-web-portfolio.vercel.app/" id="slide-link-2"><span id="slide-btn-2">See project</span></a>
                             </div>
                             <!-- Slider Content End -->
                         </div>
                     </div>
 
-                    <div class="swiper-slide single-slider d-flex align-items-center animation-style-01" style="background-image: url(assets/images/slider/slider-1.jpg);">
+                    <div class="swiper-slide single-slider d-flex align-items-center animation-style-01" style="background-image: url(assets/images/slider/slider-1.jpg);" id="slide-bg-3">
 
                         <span class="line"></span>
                         <span class="line"></span>
@@ -159,10 +159,10 @@
                         <div class="container">
                             <!-- Slider Content Start -->
                             <div class="slider-content">
-                                <h4 class="sub-title">Early Work</h4>
-                                <h1 class="main-title">Camper Café  <br>  Website </h1>
-                                <p>One of the websites from my early days,<br> this project was for a camper café restaurant. It showcased the menu<br>   highlighted their best dishes, and included a booking system. It was <br > a stepping stone in my web design journey, helping me <br >  learn the basics of creating engaging and user-friendly websites.</p>
-                                <a class="slider-btn" href="https://freecodecamp2-1.vercel.app/">See project</a>
+                                <h4 class="sub-title" id="slide-subtitle-3">Early Work</h4>
+                                <h1 class="main-title" id="slide-title-3">Camper Café  <br>  Website </h1>
+                                <p id="slide-desc-3">One of the websites from my early days,<br> this project was for a camper café restaurant. It showcased the menu<br>   highlighted their best dishes, and included a booking system. It was <br > a stepping stone in my web design journey, helping me <br >  learn the basics of creating engaging and user-friendly websites.</p>
+                                <a class="slider-btn" href="https://freecodecamp2-1.vercel.app/" id="slide-link-3"><span id="slide-btn-3">See project</span></a>
                             </div>
                             <!-- Slider Content End -->
                         </div>
@@ -193,7 +193,7 @@
                 <div class="container">
                     <div class="client-wrapper">
                         <div class="client-active swiper-container">
-                            <div class="swiper-wrapper">
+                            <div class="swiper-wrapper " id="clients-wrapper">
                                 <div class="swiper-slide">
                                     <div class="image-box">
                                         <a href="#"><img src="assets/images/clients/client-1.png" alt=""></a>
@@ -243,18 +243,16 @@
 
             <!-- About Start -->
             <div class="about-section section-padding mt-n3 mb-n1">
-                <div class="about-images" style="background-image: url(assets/images/ifedike.png);"></div>
+                <div class="about-images" style="background-image: url(assets/images/ifedike.png);" id="about-bg"></div>
 
                 <div class="container">
                     <div class="row justify-content-end">
                         <div class="col-lg-6">
                             <div class="about-content  wow fadeInRight" data-wow-delay="0.5s" data-wow-duration="2s">
-                                <h3 class="title">Ifedike Victor</h3>
-                                <p class="about-text">Great websites don’t just happen—they’re made. And with more than two years of experience as a front-end developer, I’m the one who can make your website stand out. someone who can turn your vision into a stunning reality, I’m Ifedike Victor, and I’m ready for the challenge..</p>
-                                <p>From my first line of code, I’ve crafted. From my first project, I’ve learned. From each website, I’ve grown into a creator who connects with users. </p>
-                                <p>Some say the best way to unwind is by watching TV, but for me, reading novels during my free time is far superior—it's where true creativity begins.</p>
-                                <img class="signechar" src="assets/images/signechar.png" alt="">
-                                <h6 class="name">whitefire </h6>
+                               <h3 class="title" id="about-name">Ifedike Victor</h3>
+                                <p class="about-text" id="about-bio">Great websites don’t just happen—they’re made. And with more than two years of experience as a front-end developer, I’m the one who can make your website stand out. someone who can turn your vision into a stunning reality, I’m Ifedike Victor, and I’m ready for the challenge..</p>
+                                <img class="signechar" src="assets/images/signechar.png"  id="signature-img" alt="">
+                                <h6 class="name" id="signature-name">whitefire </h6>
                             </div>
                         </div>
                     </div>
@@ -285,11 +283,11 @@
                                 <!-- Service Box Start -->
                                 <div class="service-box wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="2s">
                                     <div class="box-content">
-                                        <h4 class="title"><a href="#">profressional and dedicated</a></h4>
-                                        <p>Always committed to delivering excellence..</p>
+                                        <h4 class="title" ><a href="#" id="service-title-1">profressional and dedicated</a></h4>
+                                        <p id="service-desc-1" >Always committed to delivering excellence..</p>
                                     </div>
                                     <div class="box-icon">
-                                        <i class="icofont-labour"></i>
+                                        <i class="icofont-labour" id="service-icon-1"></i>
                                         <a href="#" class="more">More</a>
                                     </div>
                                 </div>
@@ -299,11 +297,11 @@
                                 <!-- Service Box Start -->
                                 <div class="service-box active wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="2s">
                                     <div class="box-content">
-                                        <h4 class="title"><a href="#">unique design</a></h4>
-                                        <p>Crafting innovative designs tailored for clients..</p>
+                                        <h4 class="title"><a href="#" id="service-title-2">unique design</a></h4>
+                                        <p id="service-desc-2">Crafting innovative designs tailored for clients..</p>
                                     </div>
                                     <div class="box-icon">
-                                        <i class="icofont-ruler-compass-alt"></i>
+                                        <i class="icofont-ruler-compass-alt" id="service-icon-2"></i>
                                         <a href="#" class="more">More</a>
                                     </div>
                                 </div>
@@ -313,11 +311,11 @@
                                 <!-- Service Box Start -->
                                 <div class="service-box wow fadeInUp" data-wow-delay="0.7s" data-wow-duration="2s">
                                     <div class="box-content">
-                                        <h4 class="title"><a href="#">affordable and flexiable</a></h4>
-                                        <p>Delivering high-quality work within budget.</p>
+                                        <h4 class="title"><a href="#"  id="service-title-3">affordable and flexiable</a></h4>
+                                        <p id="service-desc-3">Delivering high-quality work within budget.</p>
                                     </div>
                                     <div class="box-icon">
-                                        <i class="icofont-credit-card"></i>
+                                        <i class="icofont-credit-card" id="service-icon-3"></i>
                                         <a href="#" class="more">More</a>
                                     </div>
                                 </div>
@@ -351,10 +349,10 @@
                             <!-- Counter Box Start -->
                             <div class="counter-box  wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="2s">
                                 <div class="counter-count">
-                                    <span class="count odometer" data-count-to="2"></span>
+                                    <span class="count odometer" id="counter-1" data-count-to="2"></span>
                                 </div>
                                 <div class="counter-content">
-                                    <p>Collaborations<br> worldwide</p>
+                                    <p  id="counter-label-1" >Collaborations<br> worldwide</p>
                                 </div>
                             </div>
                             <!-- Counter Box End -->
@@ -363,10 +361,10 @@
                             <!-- Counter Box Start -->
                             <div class="counter-box  wow fadeInUp" data-wow-delay="0.6s" data-wow-duration="2s">
                                 <div class="counter-count">
-                                    <span class="count odometer" data-count-to="1"></span>
+                                    <span class="count odometer" id="counter-2" data-count-to="1"></span>
                                 </div>
                                 <div class="counter-content">
-                                    <p> Certification</p>
+                                    <p id="counter-label-2"> Certification</p>
                                 </div>
                             </div>
                             <!-- Counter Box End -->
@@ -375,10 +373,10 @@
                             <!-- Counter Box Start -->
                             <div class="counter-box  wow fadeInUp" data-wow-delay="0.9s" data-wow-duration="2s">
                                 <div class="counter-count">
-                                    <span class="count odometer" data-count-to="20"></span>
+                                    <span class="count odometer"  id="counter-3" data-count-to="20"></span>
                                 </div>
                                 <div class="counter-content">
-                                    <p>project completed </p>
+                                    <p id="counter-label-3">project completed </p>
                                 </div>
                             </div>
                             <!-- Counter Box End -->
@@ -411,9 +409,9 @@
                         <div class="work-tabs-menu mt-5">
                             <ul class="nav">
                                 <li><a class="active" data-bs-toggle="tab" href="#tab1">All</a></li>
-                                <li><a data-bs-toggle="tab" href="#tab2">architecture</a></li>
-                                <li><a data-bs-toggle="tab" href="#tab3">interior</a></li>
-                                <li><a data-bs-toggle="tab" href="#tab4">landscape</a></li>
+                                <li><a data-bs-toggle="tab" href="#tab2">Web Applications</a></li>
+                                <li><a data-bs-toggle="tab" href="#tab3">E-commerce</a></li>
+                                <li><a data-bs-toggle="tab" href="#tab4">Dashboards</a></li>
                             </ul>
                         </div>
                         <!-- Work Tab Menu End -->
@@ -430,89 +428,89 @@
                         <!-- Tab Carousel Start  -->
                         <div class="tab-carousel">
                             <div class="swiper-container">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
+                                <div class="swiper-wrapper" id="projects-all">
+                                    <div class="swiper-slide" id="project-1">
                                         <!-- Single Project Slide Start -->
                                         <div class="single-project-slide">
 
                                             <!-- Thumb Start -->
                                             <div class="thumb">
                                                 <a href="project-details.html" class="image">
-                                                    <img class="fit-image" src="assets/images/work/work-1.jpg" alt="Product" />
+                                                    <img class="fit-image" src="assets/images/work/work-1.jpg" alt="Product" id="project-image-1" />
                                                 </a>
                                             </div>
                                             <!-- Thumb End -->
 
                                             <!-- Content Start -->
                                             <div class="content">
-                                                <h4 class="subtitle">Residential</h4>
-                                                <h3 class="title"><a href="project-details.html">Cubic Villa</a></h3>
+                                                <h4 class="subtitle" id="project-category-1">Residential</h4>
+                                                <h3 class="title"><a href="project-details.html" id="project-title-1">Cubic Villa</a></h3>
                                             </div>
                                             <!-- Content End -->
 
                                         </div>
                                         <!-- Single Project Slide End -->
                                     </div>
-                                    <div class="swiper-slide">
+                                    <div class="swiper-slide" id="project-2">
                                         <!-- Single Project Slide Start -->
                                         <div class="single-project-slide">
 
                                             <!-- Thumb Start -->
                                             <div class="thumb">
                                                 <a href="project-details.html" class="image">
-                                                    <img class="fit-image" src="assets/images/work/work-2.jpg" alt="Product" />
+                                                    <img class="fit-image" src="assets/images/work/work-2.jpg" alt="Product" id="project-image-2" />
                                                 </a>
                                             </div>
                                             <!-- Thumb End -->
 
                                             <!-- Content Start -->
                                             <div class="content">
-                                                <h4 class="subtitle">Architecture</h4>
-                                                <h3 class="title"><a href="project-details.html">OBERO</a></h3>
+                                                <h4 class="subtitle" id="project-category-2">Architecture</h4>
+                                                <h3 class="title" ><a href="project-details.html" id="project-title-2">OBERO</a></h3>
                                             </div>
                                             <!-- Content End -->
 
                                         </div>
                                         <!-- Single Project Slide End -->
                                     </div>
-                                    <div class="swiper-slide">
+                                    <div class="swiper-slide" id="project-3">
                                         <!-- Single Project Slide Start -->
                                         <div class="single-project-slide">
 
                                             <!-- Thumb Start -->
                                             <div class="thumb">
                                                 <a href="project-details.html" class="image">
-                                                    <img class="fit-image" src="assets/images/work/work-3.jpg" alt="Product" />
+                                                    <img class="fit-image" src="assets/images/work/work-3.jpg" alt="Product" id="project-image-3" />
                                                 </a>
                                             </div>
                                             <!-- Thumb End -->
 
                                             <!-- Content Start -->
                                             <div class="content">
-                                                <h4 class="subtitle">Commercial</h4>
-                                                <h3 class="title"><a href="project-details.html">ABC Financial Bank</a></h3>
+                                                <h4 class="subtitle" id="project-category-3">Commercial</h4>
+                                                <h3 class="title"><a href="project-details.html" id="project-title-3">ABC Financial Bank</a></h3>
                                             </div>
                                             <!-- Content End -->
 
                                         </div>
                                         <!-- Single Project Slide End -->
                                     </div>
-                                    <div class="swiper-slide">
+                                    <div class="swiper-slide" id="project-4">
                                         <!-- Single Project Slide Start -->
                                         <div class="single-project-slide">
 
                                             <!-- Thumb Start -->
                                             <div class="thumb">
                                                 <a href="project-details.html" class="image">
-                                                    <img class="fit-image" src="assets/images/work/work-4.jpg" alt="Product" />
+                                                    <img class="fit-image" src="assets/images/work/work-4.jpg" alt="Product" id="project-image-4" />
                                                 </a>
                                             </div>
                                             <!-- Thumb End -->
 
                                             <!-- Content Start -->
                                             <div class="content">
-                                                <h4 class="subtitle">Interior</h4>
-                                                <h3 class="title"><a href="project-details.html">B6-No.5 OLA Tower</a></h3>
+                                                <h4 class="subtitle" id="project-category-4">Interior</h4>
+                                                <h3 class="title"><a href="project-details.html" id="project-title-4">B6-No.5 OLA Tower</a></h3>
                                             </div>
                                             <!-- Content End -->
 
@@ -540,89 +538,89 @@
                         <!-- Tab Carousel Start  -->
                         <div class="tab-carousel">
                             <div class="swiper-container">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
+                                <div class="swiper-wrapper" id="projects-webapps">
+                                    <div class="swiper-slide" id="project-1">
                                         <!-- Single Project Slide Start -->
                                         <div class="single-project-slide">
 
                                             <!-- Thumb Start -->
                                             <div class="thumb">
                                                 <a href="project-details.html" class="image">
-                                                    <img class="fit-image" src="assets/images/work/work-1.jpg" alt="Product" />
+                                                    <img class="fit-image" src="assets/images/work/work-1.jpg" alt="Product" id="project-image-1" />
                                                 </a>
                                             </div>
                                             <!-- Thumb End -->
 
                                             <!-- Content Start -->
                                             <div class="content">
-                                                <h4 class="subtitle">Residential</h4>
-                                                <h3 class="title"><a href="project-details.html">Cubic Villa</a></h3>
+                                                <h4 class="subtitle" id="project-category-1">Residential</h4>
+                                                <h3 class="title"><a href="project-details.html" id="project-title-1">Cubic Villa</a></h3>
                                             </div>
                                             <!-- Content End -->
 
                                         </div>
                                         <!-- Single Project Slide End -->
                                     </div>
-                                    <div class="swiper-slide">
+                                    <div class="swiper-slide" id="project-2">
                                         <!-- Single Project Slide Start -->
                                         <div class="single-project-slide">
 
                                             <!-- Thumb Start -->
                                             <div class="thumb">
                                                 <a href="project-details.html" class="image">
-                                                    <img class="fit-image" src="assets/images/work/work-2.jpg" alt="Product" />
+                                                    <img class="fit-image" src="assets/images/work/work-2.jpg" alt="Product" id="project-image-2" />
                                                 </a>
                                             </div>
                                             <!-- Thumb End -->
 
                                             <!-- Content Start -->
                                             <div class="content">
-                                                <h4 class="subtitle">Architecture</h4>
-                                                <h3 class="title"><a href="project-details.html">OBERO</a></h3>
+                                                <h4 class="subtitle" id="project-category-2">Architecture</h4>
+                                                <h3 class="title"><a href="project-details.html" id="project-title-2">OBERO</a></h3>
                                             </div>
                                             <!-- Content End -->
 
                                         </div>
                                         <!-- Single Project Slide End -->
                                     </div>
-                                    <div class="swiper-slide">
+                                    <div class="swiper-slide" id="project-3">
                                         <!-- Single Project Slide Start -->
                                         <div class="single-project-slide">
 
                                             <!-- Thumb Start -->
                                             <div class="thumb">
                                                 <a href="project-details.html" class="image">
-                                                    <img class="fit-image" src="assets/images/work/work-3.jpg" alt="Product" />
+                                                    <img class="fit-image" src="assets/images/work/work-3.jpg" alt="Product" id="project-image-3" />
                                                 </a>
                                             </div>
                                             <!-- Thumb End -->
 
                                             <!-- Content Start -->
                                             <div class="content">
-                                                <h4 class="subtitle">Commercial</h4>
-                                                <h3 class="title"><a href="project-details.html">ABC Financial Bank</a></h3>
+                                                <h4 class="subtitle" id="project-category-3">Commercial</h4>
+                                                <h3 class="title"><a href="project-details.html" id="project-title-3">ABC Financial Bank</a></h3>
                                             </div>
                                             <!-- Content End -->
 
                                         </div>
                                         <!-- Single Project Slide End -->
                                     </div>
-                                    <div class="swiper-slide">
+                                    <div class="swiper-slide" id="project-4">
                                         <!-- Single Project Slide Start -->
                                         <div class="single-project-slide">
 
                                             <!-- Thumb Start -->
                                             <div class="thumb">
                                                 <a href="project-details.html" class="image">
-                                                    <img class="fit-image" src="assets/images/work/work-4.jpg" alt="Product" />
+                                                    <img class="fit-image" src="assets/images/work/work-4.jpg" alt="Product" id="project-image-4" />
                                                 </a>
                                             </div>
                                             <!-- Thumb End -->
 
                                             <!-- Content Start -->
                                             <div class="content">
-                                                <h4 class="subtitle">Interior</h4>
-                                                <h3 class="title"><a href="project-details.html">B6-No.5 OLA Tower</a></h3>
+                                                <h4 class="subtitle" id="project-category-4">Interior</h4>
+                                                <h3 class="title"><a href="project-details.html" id="project-title-4">B6-No.5 OLA Tower</a></h3>
                                             </div>
                                             <!-- Content End -->
 
@@ -650,89 +648,89 @@
                         <!-- Tab Carousel Start  -->
                         <div class="tab-carousel">
                             <div class="swiper-container">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
+                                <div class="swiper-wrapper" id="projects-ecommerce">
+                                    <div class="swiper-slide" id="project-1">
                                         <!-- Single Project Slide Start -->
                                         <div class="single-project-slide">
 
                                             <!-- Thumb Start -->
                                             <div class="thumb">
                                                 <a href="project-details.html" class="image">
-                                                    <img class="fit-image" src="assets/images/work/work-1.jpg" alt="Product" />
+                                                    <img class="fit-image" src="assets/images/work/work-1.jpg" alt="Product"  id="project-image-1"/>
                                                 </a>
                                             </div>
                                             <!-- Thumb End -->
 
                                             <!-- Content Start -->
                                             <div class="content">
-                                                <h4 class="subtitle">Residential</h4>
-                                                <h3 class="title"><a href="project-details.html">Cubic Villa</a></h3>
+                                                <h4 class="subtitle" id="project-category-1">Residential</h4>
+                                                <h3 class="title"><a href="project-details.html" id="project-title-1">Cubic Villa</a></h3>
                                             </div>
                                             <!-- Content End -->
 
                                         </div>
                                         <!-- Single Project Slide End -->
                                     </div>
-                                    <div class="swiper-slide">
+                                    <div class="swiper-slide" id="project-2">
                                         <!-- Single Project Slide Start -->
                                         <div class="single-project-slide">
 
                                             <!-- Thumb Start -->
                                             <div class="thumb">
                                                 <a href="project-details.html" class="image">
-                                                    <img class="fit-image" src="assets/images/work/work-2.jpg" alt="Product" />
+                                                    <img class="fit-image" src="assets/images/work/work-2.jpg" alt="Product" id="project-image-2"/>
                                                 </a>
                                             </div>
                                             <!-- Thumb End -->
 
                                             <!-- Content Start -->
                                             <div class="content">
-                                                <h4 class="subtitle">Architecture</h4>
-                                                <h3 class="title"><a href="project-details.html">OBERO</a></h3>
+                                                <h4 class="subtitle" id="project-category-2">Architecture</h4>
+                                                <h3 class="title"><a href="project-details.html" id="project-title-2">OBERO</a></h3>
                                             </div>
                                             <!-- Content End -->
 
                                         </div>
                                         <!-- Single Project Slide End -->
                                     </div>
-                                    <div class="swiper-slide">
+                                    <div class="swiper-slide" id="project-3">
                                         <!-- Single Project Slide Start -->
                                         <div class="single-project-slide">
 
                                             <!-- Thumb Start -->
                                             <div class="thumb">
                                                 <a href="project-details.html" class="image">
-                                                    <img class="fit-image" src="assets/images/work/work-3.jpg" alt="Product" />
+                                                    <img class="fit-image" src="assets/images/work/work-3.jpg" alt="Product" id="project-image-3"/>
                                                 </a>
                                             </div>
                                             <!-- Thumb End -->
 
                                             <!-- Content Start -->
                                             <div class="content">
-                                                <h4 class="subtitle">Commercial</h4>
-                                                <h3 class="title"><a href="project-details.html">ABC Financial Bank</a></h3>
+                                                <h4 class="subtitle" id="project-category-3">Commercial</h4>
+                                                <h3 class="title"><a href="project-details.html" id="project-title-3">ABC Financial Bank</a></h3>
                                             </div>
                                             <!-- Content End -->
 
                                         </div>
                                         <!-- Single Project Slide End -->
                                     </div>
-                                    <div class="swiper-slide">
+                                    <div class="swiper-slide" id="project-4">
                                         <!-- Single Project Slide Start -->
                                         <div class="single-project-slide">
 
                                             <!-- Thumb Start -->
                                             <div class="thumb">
                                                 <a href="project-details.html" class="image">
-                                                    <img class="fit-image" src="assets/images/work/work-4.jpg" alt="Product" />
+                                                    <img class="fit-image" src="assets/images/work/work-4.jpg" alt="Product" id="project-image-4"/>
                                                 </a>
                                             </div>
                                             <!-- Thumb End -->
 
                                             <!-- Content Start -->
                                             <div class="content">
-                                                <h4 class="subtitle">Interior</h4>
-                                                <h3 class="title"><a href="project-details.html">B6-No.5 OLA Tower</a></h3>
+                                                <h4 class="subtitle" id="project-category-4">Interior</h4>
+                                                <h3 class="title"><a href="project-details.html" id="project-title-4">B6-No.5 OLA Tower</a></h3>
                                             </div>
                                             <!-- Content End -->
 
@@ -760,89 +758,89 @@
                         <!-- Tab Carousel Start  -->
                         <div class="tab-carousel">
                             <div class="swiper-container">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
+                                <div class="swiper-wrapper" id="projects-dashboards">
+                                    <div class="swiper-slide" id="project-1">
                                         <!-- Single Project Slide Start -->
                                         <div class="single-project-slide">
 
                                             <!-- Thumb Start -->
                                             <div class="thumb">
                                                 <a href="project-details.html" class="image">
-                                                    <img class="fit-image" src="assets/images/work/work-1.jpg" alt="Product" />
+                                                    <img class="fit-image" src="assets/images/work/work-1.jpg" alt="Product" id="project-image-1" />
                                                 </a>
                                             </div>
                                             <!-- Thumb End -->
 
                                             <!-- Content Start -->
                                             <div class="content">
-                                                <h4 class="subtitle">Residential</h4>
-                                                <h3 class="title"><a href="project-details.html">Cubic Villa</a></h3>
+                                                <h4 class="subtitle" id="project-category-1">Residential</h4>
+                                                <h3 class="title"><a href="project-details.html" id="project-title-1">Cubic Villa</a></h3>
                                             </div>
                                             <!-- Content End -->
 
                                         </div>
                                         <!-- Single Project Slide End -->
                                     </div>
-                                    <div class="swiper-slide">
+                                    <div class="swiper-slide" id="project-2">
                                         <!-- Single Project Slide Start -->
                                         <div class="single-project-slide">
 
                                             <!-- Thumb Start -->
                                             <div class="thumb">
                                                 <a href="project-details.html" class="image">
-                                                    <img class="fit-image" src="assets/images/work/work-2.jpg" alt="Product" />
+                                                    <img class="fit-image" src="assets/images/work/work-2.jpg" alt="Product" id="project-image-2" />
                                                 </a>
                                             </div>
                                             <!-- Thumb End -->
 
                                             <!-- Content Start -->
                                             <div class="content">
-                                                <h4 class="subtitle">Architecture</h4>
-                                                <h3 class="title"><a href="project-details.html">OBERO</a></h3>
+                                                <h4 class="subtitle" id="project-category-2">Architecture</h4>
+                                                <h3 class="title"><a href="project-details.html" id="project-title-2">OBERO</a></h3>
                                             </div>
                                             <!-- Content End -->
 
                                         </div>
                                         <!-- Single Project Slide End -->
                                     </div>
-                                    <div class="swiper-slide">
+                                    <div class="swiper-slide" >
                                         <!-- Single Project Slide Start -->
                                         <div class="single-project-slide">
 
                                             <!-- Thumb Start -->
                                             <div class="thumb">
                                                 <a href="project-details.html" class="image">
-                                                    <img class="fit-image" src="assets/images/work/work-3.jpg" alt="Product" />
+                                                    <img class="fit-image" src="assets/images/work/work-3.jpg" alt="Product" id="project-image-3" />
                                                 </a>
                                             </div>
                                             <!-- Thumb End -->
 
                                             <!-- Content Start -->
                                             <div class="content">
-                                                <h4 class="subtitle">Commercial</h4>
-                                                <h3 class="title"><a href="project-details.html">ABC Financial Bank</a></h3>
+                                                <h4 class="subtitle" id="project-category-3">Commercial</h4>
+                                                <h3 class="title"><a href="project-details.html" id="project-title-3">ABC Financial Bank</a></h3>
                                             </div>
                                             <!-- Content End -->
 
                                         </div>
                                         <!-- Single Project Slide End -->
                                     </div>
-                                    <div class="swiper-slide">
+                                    <div class="swiper-slide" id="project-4">
                                         <!-- Single Project Slide Start -->
                                         <div class="single-project-slide">
 
                                             <!-- Thumb Start -->
                                             <div class="thumb">
                                                 <a href="project-details.html" class="image">
-                                                    <img class="fit-image" src="assets/images/work/work-4.jpg" alt="Product" />
+                                                    <img class="fit-image" src="assets/images/work/work-4.jpg" alt="Product" id="project-image-4" />
                                                 </a>
                                             </div>
                                             <!-- Thumb End -->
 
                                             <!-- Content Start -->
                                             <div class="content">
-                                                <h4 class="subtitle">Interior</h4>
-                                                <h3 class="title"><a href="project-details.html">B6-No.5 OLA Tower</a></h3>
+                                                <h4 class="subtitle" id="project-category-4">Interior</h4>
+                                                <h3 class="title"><a href="project-details.html" id="project-title-4">B6-No.5 OLA Tower</a></h3>
                                             </div>
                                             <!-- Content End -->
 
@@ -874,11 +872,11 @@
 
         <!-- Achieved End -->
         <div class="section section-padding mt-n1 mb-n2">
-            <div class="container">
+            <div class="container" id="featured-container">
 
                 <!-- Section Title Start -->
                 <div class="section-title-2">
-                    <h2 class="title">award achieved</h2>
+                    <h2 class="title">Featured Projects</h2>
                 </div>
                 <!-- Section Title End -->
 
@@ -887,24 +885,24 @@
                     <div class="row">
                         <div class="col-lg-3">
 
-                            <div class="year-text">
+                            <div class="year-text" id="year-text-2020">
                                 <p>2020</p>
                             </div>
 
                         </div>
                         <div class="col-lg-9">
 
-                            <div class="achieved-item">
+                            <div class="achieved-item" id="achievement-2020-1">
                                 <span class="sub-title text-primary">Awwwards</span>
                                 <h2 class="title"><a href="blog-details.html">Site Of The Years for <span>Norda Landing Site</span></a></h2>
                             </div>
 
-                            <div class="achieved-item">
+                            <div class="achieved-item" id="achievement-2020-2">
                                 <span class="sub-title text-danger">CSS Design Award</span>
                                 <h2 class="title"><a href="blog-details.html">Honorable Mention for <span>Barbero Stream Music App</span></a></h2>
                             </div>
 
-                            <div class="achieved-item">
+                            <div class="achieved-item" id="achievement-2020-3">
                                 <span class="sub-title text-success">Product Hunt Maker</span>
                                 <h2 class="title"><a href="blog-details.html">Gold In Digital Craft for <span>Uthr</span></a></h2>
                             </div>
@@ -919,19 +917,19 @@
                     <div class="row">
                         <div class="col-lg-3">
 
-                            <div class="year-text">
+                            <div class="year-text" id="year-text-2019">
                                 <p>2019</p>
                             </div>
 
                         </div>
                         <div class="col-lg-9">
 
-                            <div class="achieved-item">
+                            <div class="achieved-item" id="achievement-2019-1">
                                 <span class="sub-title text-white">Fwa</span>
                                 <h2 class="title"><a href="blog-details.html">Coporate Social Responsiblity for <span>Unore</span></a></h2>
                             </div>
 
-                            <div class="achieved-item">
+                            <div class="achieved-item" id="achievement-2019-2">
                                 <span class="sub-title text-warning">Semplice</span>
                                 <h2 class="title"><a href="blog-details.html">Best Showcase for <span>Nordic</span></a></h2>
                             </div>
@@ -948,7 +946,7 @@
         <!-- Testimonial Start -->
         <div class="section">
             <div class="container">
-                <div class="testimonial-wrapper section-padding">
+                <div class="testimonial-wrapper section-padding" id="testimonials-container">
 
                     <!-- Section Title Start -->
                     <div class="section-title-2">
@@ -961,7 +959,7 @@
                         <div class="swiper-container">
                             <div class="swiper-wrapper">
 
-                                <div class="swiper-slide">
+                                <div class="swiper-slide" id="testimonial-slide-1">
                                     <!-- Single testimonial Start -->
                                     <div class="single-testimonial">
                                         <i class="icofont-quote-right"></i>
@@ -970,17 +968,17 @@
                                         <div class="testimonial-content">
                                             <!-- Name Start -->
                                             <h6 class="name">
-                                                <a href="#">Ryan Betthalyn </a> / <span> Director at Chobham Manor</span>
+                                                <a href="#" id="testimonial-name-1">Ryan Betthalyn </a> / <span id="testimonial-position-1"> Director at Chobham Manor</span>
                                             </h6>
                                             <!-- Name End -->
-                                            <p>Sed elit quam, iaculis sed semper sit amet udin vitae nibh. Rubino at magna akal semperFusce commodo molestie luctus.Lorem ipsum Dolor tusima olatiup.</p>
+                                            <p id="testimonial-content-1">Sed elit quam, iaculis sed semper sit amet udin vitae nibh. Rubino at magna akal semperFusce commodo molestie luctus.Lorem ipsum Dolor tusima olatiup.</p>
                                         </div>
                                         <!-- testimonial Content End -->
                                     </div>
                                     <!-- Single testimonial End -->
                                 </div>
 
-                                <div class="swiper-slide">
+                                <div class="swiper-slide" id="testimonial-slide-2">
                                     <!-- Single testimonial Start -->
                                     <div class="single-testimonial">
                                         <i class="icofont-quote-right"></i>
@@ -989,10 +987,10 @@
                                         <div class="testimonial-content">
                                             <!-- Name Start -->
                                             <h6 class="name">
-                                                <a href="#">Bobs Hanely </a> / <span> Director at Spotify</span>
+                                                <a href="#" id="testimonial-name-2">Bobs Hanely </a> / <span id="testimonial-position-2"> Director at Spotify</span>
                                             </h6>
                                             <!-- Name End -->
-                                            <p>Sed elit quam, iaculis sed semper sit amet udin vitae nibh. Rubino at magna akal semperFusce commodo molestie luctus.Lorem ipsum Dolor tusima olatiup.</p>
+                                            <p id="testimonial-content-2">Sed elit quam, iaculis sed semper sit amet udin vitae nibh. Rubino at magna akal semperFusce commodo molestie luctus.Lorem ipsum Dolor tusima olatiup.</p>
                                         </div>
                                         <!-- testimonial Content End -->
                                     </div>
@@ -1025,15 +1023,15 @@
 
                 <!-- Footer Info Box Start -->
                 <div class="footer-info-box text-center">
-                    <h4 class="title wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="2s">Let’s work together</h4>
-                    <h2 class="mail wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="2s"><a href="mailto:hello@andle.com">hello@andle.com</a></h2>
+                    <h4 class="title wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="2s" id="footer-heading" >Let’s work together</h4>
+                    <h2 class="mail wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="2s"><a href="mailto:hello@andle.com" id="footer-email-link"><span id="footer-email">hello@andle.com</span></a></h2>
                 </div>
                 <!-- Footer Info Box End -->
 
                 <!-- Footer Copyright & Social Start -->
                 <div class="footer-copyright-social">
                     <div class="footer-copyright">
-                        <p>&copy; 2025 <span> Andle</span> Made with <i class="icofont-heart" aria-hidden="true"></i> by <a href="https://hasthemes.com/" target="_blank">HasThemes</a></p>
+                        <p>&copy; 2025 <span id="footer-copyright-name"> Andle</span> Made with <i class="icofont-heart" aria-hidden="true"></i> by <a href="https://hasthemes.com/" target="_blank">Firesage Studio</a></p>
                     </div>
                     <div class="footer-social">
                         <ul class="social">
@@ -1082,6 +1080,11 @@
     <script src="assets/js/plugins/ajax-contact.js"></script>
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
+    <!-- Add this BEFORE your app.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@sanity/client@6.8.3/dist/sanityClient.browser.min.js"></script>
+
+    <!-- Then your app.js -->
+    <script src="js/app.js"></script>
 
 </body>
 

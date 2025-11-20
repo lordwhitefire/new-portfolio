@@ -18788,3 +18788,8 @@ img {
   background-color: #89715b;
   color: #fff;
 }
+
+
+#signature-img {
+    margin-left: -30px;
+}
