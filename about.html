@@ -22,6 +22,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/icofont/1.0.1/css/icofont.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/@icon/icofont@1.0.1-alpha.0/icofont.css">
+
     <!-- Plugins CSS -->
     <link rel="stylesheet" href="assets/css/plugins/animate.css">
     <link rel="stylesheet" href="assets/css/plugins/swiper-bundle.min.css">
@@ -116,7 +118,7 @@
                         <h1 class="banner-title"><span>Hallo!</span> It's FireSage Studio, <br> a two-person team crafting <br> flawless digital experiences.</h1>
 
                         <div class="banner-social">
-                            <p>See bits and pieces of his design work and prototyping on</p>
+                            <p>Follow our work and process on</p>
                             <ul>
                                 <li><a target="_blank" class="dribbble" href="#">Dribbble</a></li>
                                 <li><a target="_blank" class="behance" href="#">Behance</a></li>
@@ -126,9 +128,9 @@
 
                         <div class="banner-service">
                             <div class="section-title-2">
-                                <h2 class="title">Service</h2>
+                                <h2 class="title">Expertise</h2>
                             </div>
-                            <h4 class="service-text"><a href="#">UI/UX Interactive, Mobile App & <br> Video Animator</a></h4>
+                            <h4 class="service-text"><a href="#">High-performance websites, e-commerce & <br> web apps</a></h4>
                         </div>
                     </div>
                     <!-- About Banner Content End -->
@@ -137,7 +139,7 @@
 
                 <!-- About Banner Image Start -->
                 <div class="about-banner-image">
-                    <img src="assets/images/victor_about.png" alt="">
+                    <img src="assets/images/fire_sage_about.jpg" alt="">
                 </div>
                 <!-- About Banner Image End -->
 
@@ -170,7 +172,7 @@
                     <!-- Client Wrapper Start -->
                     <div class="client-wrapper">
                         <div class="client-active swiper-container">
-                            <div class="swiper-wrapper">
+                            <div class="swiper-wrapper " id="clients-wrapper">
                                 <div class="swiper-slide">
                                     <div class="image-box">
                                         <a href="#"><img src="assets/images/clients/client-1.png" alt=""></a>
@@ -224,11 +226,11 @@
 
         <!-- Achieved End -->
         <div class="section section-padding mt-n1 mb-n2">
-            <div class="container">
+            <div class="container" id="featured-container">
 
                 <!-- Section Title Start -->
                 <div class="section-title-2">
-                    <h2 class="title">award achieved</h2>
+                    <h2 class="title">Featured Projects</h2>
                 </div>
                 <!-- Section Title End -->
 
@@ -237,24 +239,24 @@
                     <div class="row">
                         <div class="col-lg-3">
 
-                            <div class="year-text">
+                            <div class="year-text" id="year-text-2020">
                                 <p>2020</p>
                             </div>
 
                         </div>
                         <div class="col-lg-9">
 
-                            <div class="achieved-item">
+                            <div class="achieved-item" id="achievement-2020-1">
                                 <span class="sub-title text-primary">Awwwards</span>
                                 <h2 class="title"><a href="blog-details.html">Site Of The Years for <span>Norda Landing Site</span></a></h2>
                             </div>
 
-                            <div class="achieved-item">
+                            <div class="achieved-item" id="achievement-2020-2">
                                 <span class="sub-title text-danger">CSS Design Award</span>
                                 <h2 class="title"><a href="blog-details.html">Honorable Mention for <span>Barbero Stream Music App</span></a></h2>
                             </div>
 
-                            <div class="achieved-item">
+                            <div class="achieved-item" id="achievement-2020-3">
                                 <span class="sub-title text-success">Product Hunt Maker</span>
                                 <h2 class="title"><a href="blog-details.html">Gold In Digital Craft for <span>Uthr</span></a></h2>
                             </div>
@@ -269,19 +271,19 @@
                     <div class="row">
                         <div class="col-lg-3">
 
-                            <div class="year-text">
+                            <div class="year-text" id="year-text-2019">
                                 <p>2019</p>
                             </div>
 
                         </div>
                         <div class="col-lg-9">
 
-                            <div class="achieved-item">
+                            <div class="achieved-item" id="achievement-2019-1">
                                 <span class="sub-title text-white">Fwa</span>
                                 <h2 class="title"><a href="blog-details.html">Coporate Social Responsiblity for <span>Unore</span></a></h2>
                             </div>
 
-                            <div class="achieved-item">
+                            <div class="achieved-item" id="achievement-2019-2">
                                 <span class="sub-title text-warning">Semplice</span>
                                 <h2 class="title"><a href="blog-details.html">Best Showcase for <span>Nordic</span></a></h2>
                             </div>
@@ -318,13 +320,13 @@
 
                                 <!-- Single Skills bar Start -->
                                 <div class="single-skills-bar">
-                                    <span class="title">Web Design</span>
+                                    <span class="title">Web Development</span>
 
                                     <div class="skill-bar">
                                         <div class="bar-inner">
-                                            <div class="bar progress-line" data-width="90">
+                                            <div class="bar progress-line" data-width="98">
                                                 <div class="skill-percentage">
-                                                    <div class="count-box"><span class="count-text" data-speed="2000" data-stop="90">0</span>%</div>
+                                                    <div class="count-box"><span class="count-text" data-speed="2000" data-stop="98">0</span>%</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -334,13 +336,13 @@
 
                                 <!-- Single Skills bar Start -->
                                 <div class="single-skills-bar">
-                                    <span class="title">branding</span>
+                                    <span class="title">SEO Optimization</span>
 
                                     <div class="skill-bar">
                                         <div class="bar-inner">
-                                            <div class="bar progress-line" data-width="70">
+                                            <div class="bar progress-line" data-width="95">
                                                 <div class="skill-percentage">
-                                                    <div class="count-box"><span class="count-text" data-speed="2000" data-stop="70">0</span>%</div>
+                                                    <div class="count-box"><span class="count-text" data-speed="2000" data-stop="95">0</span>%</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -350,13 +352,13 @@
 
                                 <!-- Single Skills bar Start -->
                                 <div class="single-skills-bar">
-                                    <span class="title">animation / motion</span>
+                                    <span class="title">Google Analytics</span>
 
                                     <div class="skill-bar">
                                         <div class="bar-inner">
-                                            <div class="bar progress-line" data-width="85">
+                                            <div class="bar progress-line" data-width="96">
                                                 <div class="skill-percentage">
-                                                    <div class="count-box"><span class="count-text" data-speed="2000" data-stop="85">0</span>%</div>
+                                                    <div class="count-box"><span class="count-text" data-speed="2000" data-stop="96">0</span>%</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -382,15 +384,15 @@
 
                 <!-- Footer Info Box Start -->
                 <div class="footer-info-box text-center">
-                    <h4 class="title wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="2s">Let’s work together</h4>
-                    <h2 class="mail wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="2s"><a href="mailto:hello@andle.com">hello@andle.com</a></h2>
+                    <h4 class="title wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="2s" id="footer-heading" >Let’s work together</h4>
+                    <h2 class="mail wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="2s"><a href="mailto:hello@andle.com" id="footer-email-link"><span id="footer-email">hello@andle.com</span></a></h2>
                 </div>
                 <!-- Footer Info Box End -->
 
                 <!-- Footer Copyright & Social Start -->
                 <div class="footer-copyright-social">
                     <div class="footer-copyright">
-                        <p>&copy; 2025 <span> Andle</span> Made with <i class="icofont-heart" aria-hidden="true"></i> by <a href="https://hasthemes.com/" target="_blank">HasThemes</a></p>
+                        <p>&copy; 2025 <span id="footer-copyright-name"> Andle</span> Made with <i class="icofont-heart" aria-hidden="true"></i> by <a href="https://hasthemes.com/" target="_blank">Firesage Studio</a></p>
                     </div>
                     <div class="footer-social">
                         <ul class="social">
@@ -439,6 +441,7 @@
     <script src="assets/js/plugins/ajax-contact.js"></script>
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
+    
      <!-- Then your app.js -->
     <script src="js/app.js"></script>
 

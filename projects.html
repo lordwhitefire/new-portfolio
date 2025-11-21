@@ -22,6 +22,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/icofont/1.0.1/css/icofont.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/@icon/icofont@1.0.1-alpha.0/icofont.css">
+
     <!-- Plugins CSS -->
     <link rel="stylesheet" href="assets/css/plugins/animate.css">
     <link rel="stylesheet" href="assets/css/plugins/swiper-bundle.min.css">
@@ -42,7 +44,7 @@
 
                     <!-- header Logo Start -->
                     <div class="logo-box">
-                        <div class="logo"><a href="index.html"><img src="assets/images/logo.png" alt="" title=""></a></div>
+                        <div class="logo"><a href="index.html"><img id="main-logo" src="assets/images/logo.png" alt="" title=""></a></div>
                     </div>
                     <!-- header Logo end -->
 
@@ -64,7 +66,7 @@
                     <a href="javascript:;" class="menu-close"><i class="ion-ios-close-outline"></i></a>
                 </div>
                 <div class="logo">
-                    <a href="index.html"><img src="assets/images/logo-2.png" alt="Logo"></a>
+                    <a href="index.html"><img id="mobile-logo" src="assets/images/logo-2.png" alt="Logo"></a>
                 </div>
                 <div class="primary-menu">
                     <ul>
@@ -272,15 +274,15 @@
 
                 <!-- Footer Info Box Start -->
                 <div class="footer-info-box text-center">
-                    <h4 class="title wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="2s">Let’s work together</h4>
-                    <h2 class="mail wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="2s"><a href="mailto:hello@andle.com">hello@andle.com</a></h2>
+                    <h4 class="title wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="2s" id="footer-heading" >Let’s work together</h4>
+                    <h2 class="mail wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="2s"><a href="mailto:hello@andle.com" id="footer-email-link"><span id="footer-email">hello@andle.com</span></a></h2>
                 </div>
                 <!-- Footer Info Box End -->
 
                 <!-- Footer Copyright & Social Start -->
                 <div class="footer-copyright-social">
                     <div class="footer-copyright">
-                        <p>&copy; 2025 <span> Andle</span> Made with <i class="icofont-heart" aria-hidden="true"></i> by <a href="https://hasthemes.com/" target="_blank">HasThemes</a></p>
+                        <p>&copy; 2025 <span id="footer-copyright-name"> Andle</span> Made with <i class="icofont-heart" aria-hidden="true"></i> by <a href="https://hasthemes.com/" target="_blank">Firesage Studio</a></p>
                     </div>
                     <div class="footer-social">
                         <ul class="social">
@@ -329,6 +331,9 @@
     <script src="assets/js/plugins/ajax-contact.js"></script>
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
+
+    <!-- Then your app.js -->
+    <script src="js/app.js"></script>
 
 </body>
 

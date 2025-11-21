@@ -22,6 +22,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/icofont/1.0.1/css/icofont.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/@icon/icofont@1.0.1-alpha.0/icofont.css">
+
     <!-- Plugins CSS -->
     <link rel="stylesheet" href="assets/css/plugins/animate.css">
     <link rel="stylesheet" href="assets/css/plugins/swiper-bundle.min.css">
@@ -42,7 +44,7 @@
 
                     <!-- header Logo Start -->
                     <div class="logo-box">
-                        <div class="logo"><a href="index.html"><img src="assets/images/logo.png" alt="" title=""></a></div>
+                        <div class="logo"><a href="index.html"><img id="main-logo" src="assets/images/logo.png" alt="" title=""></a></div>
                     </div>
                     <!-- header Logo end -->
 
@@ -64,7 +66,7 @@
                     <a href="javascript:;" class="menu-close"><i class="ion-ios-close-outline"></i></a>
                 </div>
                 <div class="logo">
-                    <a href="index.html"><img src="assets/images/logo-2.png" alt="Logo"></a>
+                    <a href="index.html"><img id="mobile-logo" src="assets/images/logo-2.png" alt="Logo"></a>
                 </div>
                 <div class="primary-menu">
                     <ul>
@@ -105,13 +107,13 @@
         <!-- overly End -->
 
         <!-- Pricing Banner Start -->
-        <div class="section pricing-banner-section" style="background-image: url(assets/images/pricing-bg.jpg);">
+        <div class="section pricing-banner-section" style="background-image: url(assets/images/pricing-bg.jpg);" id="pricing-banner">
             <div class="container">
 
                 <!-- Pricing Banner Content Start -->
-                <div class="pricing-banner-content">
-                    <h2 class="title"> <span>Simple pricing</span> that scales <br> with your business</h2>
-                    <p>Whether you’re an business in growth mode or a game studio</p>
+                <div class="pricing-banner-content" id="pricing-title">
+                    <h2 class="title"> <span id="pricing-highlighted-text">Simple pricing</span id="pricing-main-text"> that scales <br> with your business</h2>
+                    <p id="pricing-subtitle">Whether you’re an business in growth mode or a game studio</p>
                 </div>
                 <!-- Pricing Banner Content End -->
 
@@ -124,23 +126,23 @@
             <div class="container">
 
                 <!-- Pricing Table Wrapper Start -->
-                <div class="pricing-table-wrapper">
+                <div class="pricing-table-wrapper" id="pricing-table-container">
                     <div class="row row-cols-md-3 gx-0">
                         <div class="col">
 
                             <!-- Single Pricing Start -->
                             <div class="single-pricing-box">
-                                <div class="pricing-iner wow fadeInLeft" data-wow-delay="0.3s" data-wow-duration="1.5s">
+                                <div class="pricing-iner wow fadeInLeft" data-wow-delay="0.3s" data-wow-duration="1.5s" id="pricing-plan-1">
                                     <div class="icon-box">
-                                        <i class="icon-paper-plane"></i>
+                                        <i class="icon-paper-plane" id="pricing-icon-1"></i>
                                     </div>
-                                    <h4 class="title">Personal</h4>
-                                    <div class="price"><sup>$</sup>9.99<span>/ month</span></div>
-                                    <ul class="price-list">
+                                    <h4 class="title" id="pricing-title-1">Personal</h4>
+                                    <div class="price"><sup>$</sup><sup id="pricing-price-1">9.99</sup><sup id="pricing-period-1">/ month</s></div>
+                                    <ul class="price-list"  id="pricing-features-1">
                                         <li>Custome Domains</li>
                                         <li>Sleep after 30 mins of <br> activity</li>
                                     </ul>
-                                    <a href="#" class="btn btn-outline-primary d-block">get started now</a>
+                                    <a href="#" class="btn btn-outline-primary d-block" id="pricing-button-1">get started now</a>
                                 </div>
                             </div>
                             <!-- Single Pricing End -->
@@ -150,14 +152,14 @@
 
                             <!-- Single Pricing Start -->
                             <div class="single-pricing-box">
-                                <div class="pricing-iner wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="1.5s">
-                                    <div class="popular">popular</div>
+                                <div class="pricing-iner wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="1.5s" id="pricing-plan-2">
+                                    <div class="popular" id="pricing-subtitle-2">popular</div>
                                     <div class="icon-box">
-                                        <i class="icon-plane"></i>
+                                        <i class="icon-plane" id="pricing-icon-2"></i>
                                     </div>
-                                    <h4 class="title">small team</h4>
-                                    <div class="price"><sup>$</sup>49.99<span>/ month</span></div>
-                                    <ul class="price-list">
+                                    <h4 class="title" id="pricing-title-2">small team</h4>
+                                    <div class="price"><sup>$</sup><sup id="pricing-price-2">49.99</sup><sup id="pricing-period-2">/ month</sup></div>
+                                    <ul class="price-list"  id="pricing-features-2">
                                         <li>never sleeps</li>
                                         <li>multiple workers for more <br> powerful apps</li>
                                     </ul>
@@ -171,13 +173,13 @@
 
                             <!-- Single Pricing Start -->
                             <div class="single-pricing-box">
-                                <div class="pricing-iner wow fadeInRight" data-wow-delay="0.3s" data-wow-duration="1.5s">
+                                <div class="pricing-iner wow fadeInRight" data-wow-delay="0.3s" data-wow-duration="1.5s"  id="pricing-plan-3">
                                     <div class="icon-box">
-                                        <i class="icon-rocket"></i>
+                                        <i class="icon-rocket" id="pricing-icon-3"></i>
                                     </div>
-                                    <h4 class="title">enterprise</h4>
-                                    <div class="price"><sup>$</sup>99.99<span>/ month</span></div>
-                                    <ul class="price-list">
+                                    <h4 class="title" id="pricing-title-3">enterprise</h4>
+                                    <div class="price"><sup>$</sup><sup id="pricing-price-3">99.99</sup><sup id="pricing-period-3">/ month</sup></div>
+                                    <ul class="price-list" id="pricing-features-3">
                                         <li>dedicated</li>
                                         <li>simple horizontal <br> scalability</li>
                                     </ul>
@@ -201,22 +203,22 @@
 
                 <!-- Section Title Start -->
                 <div class="section-title-2">
-                    <h2 class="title">Faq's</h2>
+                    <h2 class="title" id="faq-section-title"> Faq's</h2>
                 </div>
                 <!-- Section Title End -->
 
                 <!-- FAQ'S Wrapper Start -->
-                <div class="faq-wrapper">
+                <div class="faq-wrapper" id="faq-wrapper">
                     <div class="row">
                         <div class="col-lg-3">
 
                             <!-- Faq's Menu Start -->
                             <div class="faq-menu">
-                                <ul class="nav flex-column">
-                                    <li><a class="active" data-bs-toggle="tab" href="#tab1">General</a></li>
-                                    <li><a data-bs-toggle="tab" href="#tab2">Payment</a></li>
-                                    <li><a data-bs-toggle="tab" href="#tab3">Support</a></li>
-                                    <li><a data-bs-toggle="tab" href="#tab4">Return</a></li>
+                                <ul class="nav flex-column" id="faq-tab-nav">
+                                    <li><a class="active" data-bs-toggle="tab" href="#tab1" id="faq-tab-1">General</a></li>
+                                    <li><a data-bs-toggle="tab" href="#tab2" id="faq-tab-2">Payment</a></li>
+                                    <li><a data-bs-toggle="tab" href="#tab3" id="faq-tab-3">Support</a></li>
+                                    <li><a data-bs-toggle="tab" href="#tab4" id="faq-tab-4">Return</a></li>
                                 </ul>
                             </div>
                             <!-- Faq's Menu End -->
@@ -225,32 +227,32 @@
                         <div class="col-lg-9">
 
                             <!-- Faq's Content Start -->
-                            <div class="tab-content">
+                            <div class="tab-content" id="faq-tab-content">
                                 <div class="tab-pane fade show active" id="tab1">
 
                                     <!-- Single FAQ Start -->
-                                    <div class="single-faq">
+                                    <div class="single-faq" id="faq-tab1-1">
                                         <h4 class="title">How many landing page I can work with your product?</h4>
                                         <p>You can use our themes on as many site you want. Our theme is 100% GPL & there is not domain restriction. You will receive support for the given domain amount.</p>
                                     </div>
                                     <!-- Single FAQ End -->
 
                                     <!-- Single FAQ Start -->
-                                    <div class="single-faq">
+                                    <div class="single-faq" id="faq-tab1-2">
                                         <h4 class="title">Can I use your product for my client?</h4>
                                         <p>Yes, you can. You can work with any type of project without taking our permission.</p>
                                     </div>
                                     <!-- Single FAQ End -->
 
                                     <!-- Single FAQ Start -->
-                                    <div class="single-faq">
+                                    <div class="single-faq" id="faq-tab1-3">
                                         <h4 class="title">What happens after my subscription runs out?</h4>
                                         <p>For Template Plans: After your subscription expires, you can still keep using the products you have downloaded from our site. But without an active subscription, you will NOT get updates and technical support from us.</p>
                                     </div>
                                     <!-- Single FAQ End -->
 
                                     <!-- Single FAQ Start -->
-                                    <div class="single-faq">
+                                    <div class="single-faq" id="faq-tab1-4">
                                         <h4 class="title">Will Edward oroducts slow down my website?</h4>
                                         <p>No, absolutely not. We are very obsessed about speed and optimization is not after thought for us. We made sure that the designs are almost exclusively CSS, so that no images need to be loaded. We also optimized all the code for the fastest possible loading times.​</p>
                                     </div>
@@ -260,28 +262,28 @@
                                 <div class="tab-pane fade" id="tab2">
 
                                     <!-- Single FAQ Start -->
-                                    <div class="single-faq">
+                                    <div class="single-faq" id="faq-tab2-1">
                                         <h4 class="title">How many landing page I can work with your product?</h4>
                                         <p>You can use our themes on as many site you want. Our theme is 100% GPL & there is not domain restriction. You will receive support for the given domain amount.</p>
                                     </div>
                                     <!-- Single FAQ End -->
 
                                     <!-- Single FAQ Start -->
-                                    <div class="single-faq">
+                                    <div class="single-faq" id="faq-tab2-2">
                                         <h4 class="title">Can I use your product for my client?</h4>
                                         <p>Yes, you can. You can work with any type of project without taking our permission.</p>
                                     </div>
                                     <!-- Single FAQ End -->
 
                                     <!-- Single FAQ Start -->
-                                    <div class="single-faq">
+                                    <div class="single-faq" id="faq-tab2-3">
                                         <h4 class="title">What happens after my subscription runs out?</h4>
                                         <p>For Template Plans: After your subscription expires, you can still keep using the products you have downloaded from our site. But without an active subscription, you will NOT get updates and technical support from us.</p>
                                     </div>
                                     <!-- Single FAQ End -->
 
                                     <!-- Single FAQ Start -->
-                                    <div class="single-faq">
+                                    <div class="single-faq" id="faq-tab2-4">
                                         <h4 class="title">Will Edward oroducts slow down my website?</h4>
                                         <p>No, absolutely not. We are very obsessed about speed and optimization is not after thought for us. We made sure that the designs are almost exclusively CSS, so that no images need to be loaded. We also optimized all the code for the fastest possible loading times.​</p>
                                     </div>
@@ -291,28 +293,28 @@
                                 <div class="tab-pane fade" id="tab3">
 
                                     <!-- Single FAQ Start -->
-                                    <div class="single-faq">
+                                    <div class="single-faq" id="faq-tab3-1">
                                         <h4 class="title">How many landing page I can work with your product?</h4>
                                         <p>You can use our themes on as many site you want. Our theme is 100% GPL & there is not domain restriction. You will receive support for the given domain amount.</p>
                                     </div>
                                     <!-- Single FAQ End -->
 
                                     <!-- Single FAQ Start -->
-                                    <div class="single-faq">
+                                    <div class="single-faq" id="faq-tab3-2">
                                         <h4 class="title">Can I use your product for my client?</h4>
                                         <p>Yes, you can. You can work with any type of project without taking our permission.</p>
                                     </div>
                                     <!-- Single FAQ End -->
 
                                     <!-- Single FAQ Start -->
-                                    <div class="single-faq">
+                                    <div class="single-faq" id="faq-tab3-3">
                                         <h4 class="title">What happens after my subscription runs out?</h4>
                                         <p>For Template Plans: After your subscription expires, you can still keep using the products you have downloaded from our site. But without an active subscription, you will NOT get updates and technical support from us.</p>
                                     </div>
                                     <!-- Single FAQ End -->
 
                                     <!-- Single FAQ Start -->
-                                    <div class="single-faq">
+                                    <div class="single-faq" id="faq-tab3-4">
                                         <h4 class="title">Will Edward oroducts slow down my website?</h4>
                                         <p>No, absolutely not. We are very obsessed about speed and optimization is not after thought for us. We made sure that the designs are almost exclusively CSS, so that no images need to be loaded. We also optimized all the code for the fastest possible loading times.​</p>
                                     </div>
@@ -322,28 +324,28 @@
                                 <div class="tab-pane fade" id="tab4">
 
                                     <!-- Single FAQ Start -->
-                                    <div class="single-faq">
+                                    <div class="single-faq" id="faq-tab4-1">
                                         <h4 class="title">How many landing page I can work with your product?</h4>
                                         <p>You can use our themes on as many site you want. Our theme is 100% GPL & there is not domain restriction. You will receive support for the given domain amount.</p>
                                     </div>
                                     <!-- Single FAQ End -->
 
                                     <!-- Single FAQ Start -->
-                                    <div class="single-faq">
+                                    <div class="single-faq" id="faq-tab4-2">
                                         <h4 class="title">Can I use your product for my client?</h4>
                                         <p>Yes, you can. You can work with any type of project without taking our permission.</p>
                                     </div>
                                     <!-- Single FAQ End -->
 
                                     <!-- Single FAQ Start -->
-                                    <div class="single-faq">
+                                    <div class="single-faq" id="faq-tab4-3">
                                         <h4 class="title">What happens after my subscription runs out?</h4>
                                         <p>For Template Plans: After your subscription expires, you can still keep using the products you have downloaded from our site. But without an active subscription, you will NOT get updates and technical support from us.</p>
                                     </div>
                                     <!-- Single FAQ End -->
 
                                     <!-- Single FAQ Start -->
-                                    <div class="single-faq">
+                                    <div class="single-faq" id="faq-tab4-4">
                                         <h4 class="title">Will Edward oroducts slow down my website?</h4>
                                         <p>No, absolutely not. We are very obsessed about speed and optimization is not after thought for us. We made sure that the designs are almost exclusively CSS, so that no images need to be loaded. We also optimized all the code for the fastest possible loading times.​</p>
                                     </div>
@@ -365,7 +367,7 @@
         <!-- Testimonial Start -->
         <div class="section">
             <div class="container">
-                <div class="testimonial-wrapper section-padding">
+                <div class="testimonial-wrapper section-padding" id="testimonials-container">
 
                     <!-- Section Title Start -->
                     <div class="section-title-2">
@@ -378,7 +380,7 @@
                         <div class="swiper-container">
                             <div class="swiper-wrapper">
 
-                                <div class="swiper-slide">
+                                <div class="swiper-slide" id="testimonial-slide-1">
                                     <!-- Single testimonial Start -->
                                     <div class="single-testimonial">
                                         <i class="icofont-quote-right"></i>
@@ -387,17 +389,17 @@
                                         <div class="testimonial-content">
                                             <!-- Name Start -->
                                             <h6 class="name">
-                                                <a href="#">Ryan Betthalyn </a> / <span> Director at Chobham Manor</span>
+                                                <a href="#" id="testimonial-name-1">Ryan Betthalyn </a> / <span id="testimonial-position-1"> Director at Chobham Manor</span>
                                             </h6>
                                             <!-- Name End -->
-                                            <p>Sed elit quam, iaculis sed semper sit amet udin vitae nibh. Rubino at magna akal semperFusce commodo molestie luctus.Lorem ipsum Dolor tusima olatiup.</p>
+                                            <p id="testimonial-content-1">Sed elit quam, iaculis sed semper sit amet udin vitae nibh. Rubino at magna akal semperFusce commodo molestie luctus.Lorem ipsum Dolor tusima olatiup.</p>
                                         </div>
                                         <!-- testimonial Content End -->
                                     </div>
                                     <!-- Single testimonial End -->
                                 </div>
 
-                                <div class="swiper-slide">
+                                <div class="swiper-slide" id="testimonial-slide-2">
                                     <!-- Single testimonial Start -->
                                     <div class="single-testimonial">
                                         <i class="icofont-quote-right"></i>
@@ -406,10 +408,10 @@
                                         <div class="testimonial-content">
                                             <!-- Name Start -->
                                             <h6 class="name">
-                                                <a href="#">Bobs Hanely </a> / <span> Director at Spotify</span>
+                                                <a href="#" id="testimonial-name-2">Bobs Hanely </a> / <span id="testimonial-position-2"> Director at Spotify</span>
                                             </h6>
                                             <!-- Name End -->
-                                            <p>Sed elit quam, iaculis sed semper sit amet udin vitae nibh. Rubino at magna akal semperFusce commodo molestie luctus.Lorem ipsum Dolor tusima olatiup.</p>
+                                            <p id="testimonial-content-2">Sed elit quam, iaculis sed semper sit amet udin vitae nibh. Rubino at magna akal semperFusce commodo molestie luctus.Lorem ipsum Dolor tusima olatiup.</p>
                                         </div>
                                         <!-- testimonial Content End -->
                                     </div>
@@ -442,15 +444,15 @@
 
                 <!-- Footer Info Box Start -->
                 <div class="footer-info-box text-center">
-                    <h4 class="title wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="2s">Let’s work together</h4>
-                    <h2 class="mail wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="2s"><a href="mailto:hello@andle.com">hello@andle.com</a></h2>
+                    <h4 class="title wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="2s" id="footer-heading" >Let’s work together</h4>
+                    <h2 class="mail wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="2s"><a href="mailto:hello@andle.com" id="footer-email-link"><span id="footer-email">hello@andle.com</span></a></h2>
                 </div>
                 <!-- Footer Info Box End -->
 
                 <!-- Footer Copyright & Social Start -->
                 <div class="footer-copyright-social">
                     <div class="footer-copyright">
-                        <p>&copy; 2025 <span> Andle</span> Made with <i class="icofont-heart" aria-hidden="true"></i> by <a href="https://hasthemes.com/" target="_blank">HasThemes</a></p>
+                        <p>&copy; 2025 <span id="footer-copyright-name"> Andle</span> Made with <i class="icofont-heart" aria-hidden="true"></i> by <a href="https://hasthemes.com/" target="_blank">Firesage Studio</a></p>
                     </div>
                     <div class="footer-social">
                         <ul class="social">
@@ -499,6 +501,12 @@
     <script src="assets/js/plugins/ajax-contact.js"></script>
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
+
+    <!-- Then your app.js -->
+    <script src="js/app.js"></script>
+
+     <!-- Then your pricing.js -->
+    <script src="js/pricing.js"></script>
 
 </body>
 
