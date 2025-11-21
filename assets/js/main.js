@@ -1,5 +1,6 @@
 (function ($) {
     "use strict";
+    document.documentElement.classList.add('sanity-ready');
 
     /*--
         Sticky Header

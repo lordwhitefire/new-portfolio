@@ -32,7 +32,15 @@
 
 </head>
 
-
+<style>
+  html:not(.sanity-ready) body > *:not(#firesage-preloader) {
+    opacity: 0 !important;
+  }
+  html.sanity-ready body > * {
+    opacity: 1;
+    transition: opacity 0.4s ease;
+  }
+</style>
 <body>
 
     <div class="main-wrapper">
@@ -80,20 +88,7 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="#">Project</a>
-
-                            <ul class="sub-menu">
-                                <li><a href="projects.html">Projects</a></li>
-                                <li><a href="project-details.html">Project Details</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">Blog</a>
-
-                            <ul class="sub-menu">
-                                <li><a href="blog.html">Blog</a></li>
-                                <li><a href="blog-details.html">Blog Details</a></li>
-                            </ul>
+                            <a href="projects.html">Projects</a>
                         </li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
@@ -112,7 +107,7 @@
 
                 <!-- Page Banner Title Start -->
                 <div class="page-banner-title">
-                    <h2 class="title"> Latest Projects</h2>
+                    <h2 class="title" id="projects-page-title"> Latest Projects</h2>
                 </div>
                 <!-- Page Banner Title End -->
 
@@ -120,10 +115,10 @@
                 <div class="filter-menu">
                     <ul class="menu-list">
                         <li class="active" data-filter="*">all</li>
-                        <li data-filter=".web-design">web design</li>
-                        <li data-filter=".branding">branding</li>
-                        <li data-filter=".mobile-app">mobile app</li>
-                        <li data-filter=".motion">motion</li>
+                        <li data-filter=".ecommerce">E-Commerce</li>
+                        <li data-filter=".web-app">Web Apps</li>
+                        <li data-filter=".dashboard">Dashboards</li>
+                        <li data-filter=".portfolio">Portfolio Sites</li>
                     </ul>
                 </div>
                 <!-- Filter  Section End -->
@@ -134,121 +129,121 @@
 
                 <!-- Project Section Start -->
                 <div class="project-section mt-n4">
-                    <div class="row grid">
+                    <div class="row grid" id="projects-grid">
 
                         <div class="col-xl-4 col-md-6 mobile-app">
                             <!-- Single Project Start -->
-                            <div class="single-project wow zoomIn" data-wow-delay="0.3s" data-wow-duration="0.5s">
+                            <div class="single-project wow zoomIn" data-wow-delay="0.3s" data-wow-duration="0.5s" id="project-1">
                                 <div class="project-images">
-                                    <a href="project-details.html"><img src="assets/images/project/project-1.jpg" alt="Project"></a>
+                                    <a href="project-details.html" id="project-link-1"><img src="assets/images/project/project-1.jpg" alt="Project" id="project-image-1"></a>
                                 </div>
                                 <div class="project-content">
-                                    <h4 class="title"><a href="project-details.html">Figma Free UI Kit</a></h4>
-                                    <p class="category">Web/App, Branding</p>
+                                    <h4 class="title"><a href="project-details.html" id="project-title-1">Figma Free UI Kit</a></h4>
+                                    <p class="category" id="project-category-1">Web/App, Branding</p>
                                 </div>
                             </div>
                             <!-- Single Project End -->
                         </div>
                         <div class="col-xl-4 col-md-6 web-design mobile-app">
                             <!-- Single Project Start -->
-                            <div class="single-project wow zoomIn" data-wow-delay="0.3s" data-wow-duration="0.5s">
+                            <div class="single-project wow zoomIn" data-wow-delay="0.3s" data-wow-duration="0.5s" id="project-2">
                                 <div class="project-images">
-                                    <a href="project-details.html"><img src="assets/images/project/project-2.jpg" alt="Project"></a>
+                                    <a href="project-details.html" id="project-link-2"><img src="assets/images/project/project-2.jpg" alt="Project" id="project-image-2"></a>
                                 </div>
                                 <div class="project-content">
-                                    <h4 class="title"><a href="project-details.html">AZA Social App</a></h4>
-                                    <p class="category">Web/App</p>
+                                    <h4 class="title"><a href="project-details.html" id="project-title-2">AZA Social App</a></h4>
+                                    <p class="category" id="project-category-2">Web/App</p>
                                 </div>
                             </div>
                             <!-- Single Project End -->
                         </div>
                         <div class="col-xl-4 col-md-6 branding motion">
                             <!-- Single Project Start -->
-                            <div class="single-project wow zoomIn" data-wow-delay="0.3s" data-wow-duration="0.5s">
+                            <div class="single-project wow zoomIn" data-wow-delay="0.3s" data-wow-duration="0.5s" id="project-3">
                                 <div class="project-images">
-                                    <a href="project-details.html"><img src="assets/images/project/project-3.jpg" alt="Project"></a>
+                                    <a href="project-details.html" id="project-link-3"><img src="assets/images/project/project-3.jpg" alt="Project" id="project-image-3"></a>
                                 </div>
                                 <div class="project-content">
-                                    <h4 class="title"><a href="project-details.html">Allen Carter Business Card</a></h4>
-                                    <p class="category">Branding</p>
+                                    <h4 class="title"><a href="project-details.html" id="project-title-3">Allen Carter Business Card</a></h4>
+                                    <p class="category" id="project-category-3">Branding</p>
                                 </div>
                             </div>
                             <!-- Single Project End -->
                         </div>
                         <div class="col-xl-4 col-md-6 branding">
                             <!-- Single Project Start -->
-                            <div class="single-project wow zoomIn" data-wow-delay="0.3s" data-wow-duration="0.5s">
+                            <div class="single-project wow zoomIn" data-wow-delay="0.3s" data-wow-duration="0.5s" id="project-4">
                                 <div class="project-images">
-                                    <a href="project-details.html"><img src="assets/images/project/project-4.jpg" alt="Project"></a>
+                                    <a href="project-details.html" id="project-link-4"><img src="assets/images/project/project-4.jpg" alt="Project" id="project-image-4"></a>
                                 </div>
                                 <div class="project-content">
-                                    <h4 class="title"><a href="project-details.html">CBD Gummies</a></h4>
-                                    <p class="category">Branding</p>
+                                    <h4 class="title"><a href="project-details.html" id="project-title-4">CBD Gummies</a></h4>
+                                    <p class="category" id="project-category-4">Branding</p>
                                 </div>
                             </div>
                             <!-- Single Project End -->
                         </div>
                         <div class="col-xl-4 col-md-6 web-design mobile-app">
                             <!-- Single Project Start -->
-                            <div class="single-project wow zoomIn" data-wow-delay="0.3s" data-wow-duration="0.5s">
+                            <div class="single-project wow zoomIn" data-wow-delay="0.3s" data-wow-duration="0.5s" id="project-5">
                                 <div class="project-images">
-                                    <a href="project-details.html"><img src="assets/images/project/project-5.jpg" alt="Project"></a>
+                                    <a href="project-details.html" id="project-link-5"><img src="assets/images/project/project-5.jpg" alt="Project" id="project-image-5"></a>
                                 </div>
                                 <div class="project-content">
-                                    <h4 class="title"><a href="project-details.html">THINK Rebrand</a></h4>
-                                    <p class="category">Web/App</p>
+                                    <h4 class="title"><a href="project-details.html" id="project-title-5">THINK Rebrand</a></h4>
+                                    <p class="category" id="project-category-5">Web/App</p>
                                 </div>
                             </div>
                             <!-- Single Project End -->
                         </div>
                         <div class="col-xl-4 col-md-6 branding motion">
                             <!-- Single Project Start -->
-                            <div class="single-project wow zoomIn" data-wow-delay="0.3s" data-wow-duration="0.5s">
+                            <div class="single-project wow zoomIn" data-wow-delay="0.3s" data-wow-duration="0.5s" id="project-6">
                                 <div class="project-images">
-                                    <a href="project-details.html"><img src="assets/images/project/project-6.jpg" alt="Project"></a>
+                                    <a href="project-details.html" id="project-link-6"><img src="assets/images/project/project-6.jpg" alt="Project" id="project-image-6"></a>
                                 </div>
                                 <div class="project-content">
-                                    <h4 class="title"><a href="project-details.html">Allen Carter Business Card</a></h4>
-                                    <p class="category">Branding</p>
+                                    <h4 class="title"><a href="project-details.html" id="project-title-6">Allen Carter Business Card</a></h4>
+                                    <p class="category" id="project-category-6">Branding</p>
                                 </div>
                             </div>
                             <!-- Single Project End -->
                         </div>
                         <div class="col-xl-4 col-md-6 web-design branding">
                             <!-- Single Project Start -->
-                            <div class="single-project wow zoomIn" data-wow-delay="0.3s" data-wow-duration="0.5s">
+                            <div class="single-project wow zoomIn" data-wow-delay="0.3s" data-wow-duration="0.5s" id="project-7">
                                 <div class="project-images">
-                                    <a href="project-details.html"><img src="assets/images/project/project-7.jpg" alt="Project"></a>
+                                    <a href="project-details.html" id="project-link-7"><img src="assets/images/project/project-7.jpg" alt="Project" id="project-image-7"></a>
                                 </div>
                                 <div class="project-content">
-                                    <h4 class="title"><a href="project-details.html">B&OPlay Headphone</a></h4>
-                                    <p class="category">Web/App, Branding</p>
+                                    <h4 class="title"><a href="project-details.html" id="project-title-7">B&OPlay Headphone</a></h4>
+                                    <p class="category" id="project-category-7">Web/App, Branding</p>
                                 </div>
                             </div>
                             <!-- Single Project End -->
                         </div>
                         <div class="col-xl-4 col-md-6 web-design mobile-app">
                             <!-- Single Project Start -->
-                            <div class="single-project wow zoomIn" data-wow-delay="0.3s" data-wow-duration="0.5s">
+                            <div class="single-project wow zoomIn" data-wow-delay="0.3s" data-wow-duration="0.5s" id="project-8">
                                 <div class="project-images">
-                                    <a href="project-details.html"><img src="assets/images/project/project-8.jpg" alt="Project"></a>
+                                    <a href="project-details.html" id="project-link-8"><img src="assets/images/project/project-8.jpg" alt="Project" id="project-image-8"></a>
                                 </div>
                                 <div class="project-content">
-                                    <h4 class="title"><a href="project-details.html">Nordic Interior Studio</a></h4>
-                                    <p class="category">Web/App</p>
+                                    <h4 class="title"><a href="project-details.html" id="project-title-8">Nordic Interior Studio</a></h4>
+                                    <p class="category" id="project-category-8">Web/App</p>
                                 </div>
                             </div>
                             <!-- Single Project End -->
                         </div>
                         <div class="col-xl-4 col-md-6 branding motion">
                             <!-- Single Project Start -->
-                            <div class="single-project wow zoomIn" data-wow-delay="0.3s" data-wow-duration="0.5s">
+                            <div class="single-project wow zoomIn" data-wow-delay="0.3s" data-wow-duration="0.5s" id="project-9">
                                 <div class="project-images">
-                                    <a href="project-details.html"><img src="assets/images/project/project-9.jpg" alt="Project"></a>
+                                    <a href="project-details.html" id="project-link-9"><img src="assets/images/project/project-9.jpg" alt="Project" id="project-image-9"></a>
                                 </div>
                                 <div class="project-content">
-                                    <h4 class="title"><a href="project-details.html">Allen Carter Business Card</a></h4>
-                                    <p class="category">Branding</p>
+                                    <h4 class="title"><a href="project-details.html" id="project-title-9">Allen Carter Business Card</a></h4>
+                                    <p class="category" id="project-category-9">Branding</p>
                                 </div>
                             </div>
                             <!-- Single Project End -->
@@ -260,7 +255,7 @@
 
                 <!-- Load More End -->
                 <div class="load-more text-center section-padding">
-                    <a href="#" class="more">load more</a>
+                    <a href="#" class="more" id="load-more-btn">load more</a>
                 </div>
                 <!-- Load More End -->
 
@@ -335,6 +330,113 @@
     <!-- Then your app.js -->
     <script src="js/app.js"></script>
 
-</body>
+     <!-- Then your pricing.js -->
+    <script src="js/projects.js"></script>
+                <script>
+  // FireSage Preloader — Only hides when EVERYTHING is ready
+  window.addEventListener('load', () => {
+    // Wait a little extra for Sanity content to be injected
+    setTimeout(() => {
+      const preloader = document.getElementById('firesage-preloader');
+      if (preloader) {
+        preloader.style.opacity = '0';
+        preloader.style.visibility = 'hidden';
+        setTimeout(() => preloader.remove(), 1300);
+      }
+    }, 800); // 800ms grace period after load
+  });
 
+  // Optional: Force hide after 8 seconds (safety)
+  setTimeout(() => {
+    const preloader = document.getElementById('firesage-preloader');
+    if (preloader) preloader.remove();
+  }, 8000);
+               </script>
+</body>
+<div id="firesage-preloader">
+  <div class="loader-wrapper">
+    <div class="fire-core"></div>
+    <div class="fire-ring"></div>
+    <div class="fire-spark"></div>
+    <div class="fire-text">FIRESAGE</div>
+  </div>
+</div>
+
+
+
+<style>
+  #firesage-preloader {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    z-index: 999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 1.2s cubic-bezier(0.22, 1, 0.36, 1), visibility 1.2s;
+  }
+  .loader-wrapper {
+    position: relative;
+    width: 160px;
+    height: 160px;
+  }
+  .fire-core {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background: #8B0000;
+    border-radius: 50%;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 40px #FF1A1A;
+    animation: corePulse 2s infinite;
+  }
+  .fire-ring {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border: 2px solid transparent;
+    border-top-color: #FF1A1A;
+    border-radius: 50%;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    animation: spin 3s linear infinite;
+  }
+  .fire-spark {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: #FF4500;
+    border-radius: 50%;
+    box-shadow: 0 0 20px #FF1A1A;
+    animation: sparkFloat 4s infinite;
+  }
+  .fire-text {
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    font-weight: 900;
+    letter-spacing: 8px;
+    color: transparent;
+    background: linear-gradient(90deg, #8B0000, #FF1A1A);
+    -webkit-background-clip: text;
+    background-clip: text;
+    opacity: 0.8;
+  }
+  @keyframes corePulse {
+    0%, 100% { box-shadow: 0 0 40px #FF1A1A; transform: translate(-50%, -50%) scale(1); }
+    50% { box-shadow: 0 0 80px #FF4500; transform: translate(-50%, -50%) scale(1.3); }
+  }
+  @keyframes spin {
+    to { transform: translate(-50%, -50%) rotate(360deg); }
+  }
+  @keyframes sparkFloat {
+    0% { top: 20px; left: 20px; opacity: 1; }
+    100% { top: 140px; left: 140px; opacity: 0; }
+  }
+</style>
 </html>

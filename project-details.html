@@ -22,6 +22,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/icofont/1.0.1/css/icofont.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/@icon/icofont@1.0.1-alpha.0/icofont.css">
+
     <!-- Plugins CSS -->
     <link rel="stylesheet" href="assets/css/plugins/animate.css">
     <link rel="stylesheet" href="assets/css/plugins/swiper-bundle.min.css">
@@ -30,7 +32,15 @@
 
 </head>
 
-
+<style>
+  html:not(.sanity-ready) body > *:not(#firesage-preloader) {
+    opacity: 0 !important;
+  }
+  html.sanity-ready body > * {
+    opacity: 1;
+    transition: opacity 0.4s ease;
+  }
+</style>
 <body>
 
     <div class="main-wrapper">
@@ -42,7 +52,7 @@
 
                     <!-- header Logo Start -->
                     <div class="logo-box">
-                        <div class="logo"><a href="index.html"><img src="assets/images/logo.png" alt="" title=""></a></div>
+                        <div class="logo"><a href="index.html"><img id="main-logo" src="assets/images/logo.png" alt="" title=""></a></div>
                     </div>
                     <!-- header Logo end -->
 
@@ -64,7 +74,7 @@
                     <a href="javascript:;" class="menu-close"><i class="ion-ios-close-outline"></i></a>
                 </div>
                 <div class="logo">
-                    <a href="index.html"><img src="assets/images/logo-2.png" alt="Logo"></a>
+                    <a href="index.html"><img id="mobile-logo" src="assets/images/logo-2.png" alt="Logo"></a>
                 </div>
                 <div class="primary-menu">
                     <ul>
@@ -78,20 +88,7 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="#">Project</a>
-
-                            <ul class="sub-menu">
-                                <li><a href="projects.html">Projects</a></li>
-                                <li><a href="project-details.html">Project Details</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">Blog</a>
-
-                            <ul class="sub-menu">
-                                <li><a href="blog.html">Blog</a></li>
-                                <li><a href="blog-details.html">Blog Details</a></li>
-                            </ul>
+                            <a href="projects.html">Projects</a>
                         </li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
@@ -110,8 +107,8 @@
 
                 <!-- Page Banner Title Start -->
                 <div class="page-banner-title">
-                    <h2 class="title">Single Portfolio</h2>
-                    <p>web design, Mobile App</p>
+                    <h2 class="title" id="project-page-title">Single Portfolio</h2>
+                    <p id="project-page-subtitle">web design, Mobile App</p>
                 </div>
                 <!-- Page Banner Title End -->
 
@@ -125,7 +122,7 @@
 
                 <!-- Details Images Start -->
                 <div class="details-images">
-                    <img src="assets/images/project-details/project-details.jpg" alt="Project Details">
+                    <img src="assets/images/project-details/project-details.jpg" alt="Project Details" id="project-main-image">
                 </div>
                 <!-- Details Images End -->
 
@@ -135,9 +132,9 @@
 
                 <!-- Details Challenge Start  -->
                 <div class="details-challenge section-padding-02 mt-n1">
-                    <h5 class="details-label">the challenge</h5>
+                    <h5 class="details-label" id="project-challenge-label">the challenge</h5>
 
-                    <h1 class="title">Create the system design for <br> ATA Finance Banking</h1>
+                    <h1 class="title" id="project-challenge-title">Create the system design for <br> ATA Finance Banking</h1>
                 </div>
                 <!-- Details Challenge End  -->
 
@@ -148,8 +145,8 @@
 
                             <!-- Single Info Start  -->
                             <div class="single-info">
-                                <h5 class="details-label">the challenge</h5>
-                                <p>Poland ATA Finance <br> Banking</p>
+                                <h5 class="details-label" >Client</h5>
+                                <p id="project-client">Poland ATA Finance <br> Banking</p>
                             </div>
                             <!-- Single Info Start  -->
 
@@ -159,7 +156,7 @@
                             <!-- Single Info Start  -->
                             <div class="single-info">
                                 <h5 class="details-label">Date</h5>
-                                <p>March 25, 2024</p>
+                                <p id="project-date">March 25, 2024</p>
                             </div>
                             <!-- Single Info Start  -->
 
@@ -169,7 +166,7 @@
                             <!-- Single Info Start  -->
                             <div class="single-info">
                                 <h5 class="details-label">team</h5>
-                                <p>Aslam - Developer <br> Logan - U/UX Designer <br> Lina - Tester</p>
+                                <p id="project-team">Aslam - Developer <br> Logan - U/UX Designer <br> Lina - Tester</p>
                             </div>
                             <!-- Single Info Start  -->
 
@@ -179,7 +176,7 @@
                             <!-- Single Info Start  -->
                             <div class="single-info">
                                 <h5 class="details-label">Service</h5>
-                                <p>Strategy, UI/UX Interaction, Mobile Design</p>
+                                <p id="project-services">Strategy, UI/UX Interaction, Mobile Design</p>
                             </div>
                             <!-- Single Info Start  -->
 
@@ -190,8 +187,8 @@
 
                 <!-- Details Middle Content Start  -->
                 <div class="details-middle-content section-padding-02 mt-n2">
-                    <h2 class="title">Ideas & Concept</h2>
-                    <p>Edden’s Villa is an international project located in Costa Rica. It has various different levels, whom are embedded into the unevenness of the terrain. This project seeks to integrate passive strategies for energy saving, such as the inclusion of as much natural light as possible as well as having green roofs with lots of vegetation in them. <br> The geometry of this house combines design with nature into the structure of the house, which makes it unique amongst other neighboring places.</p>
+                    <h2 class="title" id="project-concept-title">Ideas & Concept</h2>
+                    <p id="project-concept-description">Edden’s Villa is an international project located in Costa Rica. It has various different levels, whom are embedded into the unevenness of the terrain. This project seeks to integrate passive strategies for energy saving, such as the inclusion of as much natural light as possible as well as having green roofs with lots of vegetation in them. <br> The geometry of this house combines design with nature into the structure of the house, which makes it unique amongst other neighboring places.</p>
                 </div>
                 <!-- Details Middle Content End  -->
 
@@ -205,14 +202,14 @@
                         <div class="col-lg-6">
                             <!-- Details Images Start -->
                             <div class="details-images mt-6 wow fadeInLeft" data-wow-delay="0.3s" data-wow-duration="1.5s">
-                                <img src="assets/images/project-details/dec-images-1.jpg" alt="Project Details">
+                                <img src="assets/images/project-details/dec-images-1.jpg" alt="Project Details" id="project-left-image">
                             </div>
                             <!-- Details Images End -->
                         </div>
                         <div class="col-lg-6">
                             <!-- Details Images Start -->
                             <div class="details-images mt-6 wow fadeInRight" data-wow-delay="0.3s" data-wow-duration="1.5s">
-                                <img src="assets/images/project-details/dec-images-2.jpg" alt="Project Details">
+                                <img src="assets/images/project-details/dec-images-2.jpg" alt="Project Details" id="project-right-image">
                             </div>
                             <!-- Details Images End -->
                         </div>
@@ -226,20 +223,20 @@
 
                 <!-- Blockquote Start  -->
                 <div class="blockquote section-padding-02  mt-n3">
-                    <p>“This is the testimonial or review from clients, then will <br> is lorem ispum dolor sit amet, consectetur adipiscing elit  sed do <br> eiusmod tempor incididunt ut labore.” </p>
+                    <p id="project-testimonial">“This is the testimonial or review from clients, then will <br> is lorem ispum dolor sit amet, consectetur adipiscing elit  sed do <br> eiusmod tempor incididunt ut labore.” </p>
                 </div>
                 <!-- Blockquote End  -->
 
                 <!-- Author Info Start  -->
                 <div class="author-info">
                     <h4 class="name">Adam Levine</h4>
-                    <p>Director of Poland ATA Finance Banking</p>
+                    <p id="project-client-position">Director of Poland ATA Finance Banking</p>
                 </div>
                 <!-- Author Info End  -->
 
                 <!-- Details Images Start -->
                 <div class="details-images section-padding-02 mt-n2">
-                    <img src="assets/images/project-details/dec-images-3.jpg" alt="Project Details">
+                    <img src="assets/images/project-details/dec-images-3.jpg" alt="Project Details" id="project-bottom-image">
                 </div>
                 <!-- Details Images End -->
 
@@ -247,9 +244,9 @@
                 <div class="details-social">
                     <h5 class="details-label">Share on social</h5>
                     <ul class="social">
-                        <li><a href="#"><i class="ion-social-twitter"></i></a></li>
-                        <li><a href="#"><i class="ion-social-facebook"></i></a></li>
-                        <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+                        <li><a href="#" id="project-twitter-link"><i class="ion-social-twitter"></i></a></li>
+                        <li><a href="#" id="project-facebook-link"><i class="ion-social-facebook"></i></a></li>
+                        <li><a href="#" id="project-googleplus-link"><i class="ion-social-googleplus"></i></a></li>
                     </ul>
                 </div>
                 <!-- Details Social End -->
@@ -319,15 +316,15 @@
 
                 <!-- Footer Info Box Start -->
                 <div class="footer-info-box text-center">
-                    <h4 class="title wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="2s">Let’s work together</h4>
-                    <h2 class="mail wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="2s"><a href="mailto:hello@andle.com">hello@andle.com</a></h2>
+                    <h4 class="title wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="2s" id="footer-heading" >Let’s work together</h4>
+                    <h2 class="mail wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="2s"><a href="mailto:hello@andle.com" id="footer-email-link"><span id="footer-email">hello@andle.com</span></a></h2>
                 </div>
                 <!-- Footer Info Box End -->
 
                 <!-- Footer Copyright & Social Start -->
                 <div class="footer-copyright-social">
                     <div class="footer-copyright">
-                        <p>&copy; 2025 <span> Andle</span> Made with <i class="icofont-heart" aria-hidden="true"></i> by <a href="https://hasthemes.com/" target="_blank">HasThemes</a></p>
+                        <p>&copy; 2025 <span id="footer-copyright-name"> Andle</span> Made with <i class="icofont-heart" aria-hidden="true"></i> by <a href="https://hasthemes.com/" target="_blank">Firesage Studio</a></p>
                     </div>
                     <div class="footer-social">
                         <ul class="social">
@@ -377,6 +374,116 @@
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
 
-</body>
+        <!-- Then your app.js -->
+    <script src="js/app.js"></script>
 
+     <!-- Then your pricing.js -->
+    <script src="js/projects.js"></script>
+                    <script>
+  // FireSage Preloader — Only hides when EVERYTHING is ready
+  window.addEventListener('load', () => {
+    // Wait a little extra for Sanity content to be injected
+    setTimeout(() => {
+      const preloader = document.getElementById('firesage-preloader');
+      if (preloader) {
+        preloader.style.opacity = '0';
+        preloader.style.visibility = 'hidden';
+        setTimeout(() => preloader.remove(), 1300);
+      }
+    }, 800); // 800ms grace period after load
+  });
+
+  // Optional: Force hide after 8 seconds (safety)
+  setTimeout(() => {
+    const preloader = document.getElementById('firesage-preloader');
+    if (preloader) preloader.remove();
+  }, 8000);
+                   </script>
+</body>
+<div id="firesage-preloader">
+  <div class="loader-wrapper">
+    <div class="fire-core"></div>
+    <div class="fire-ring"></div>
+    <div class="fire-spark"></div>
+    <div class="fire-text">FIRESAGE</div>
+  </div>
+</div>
+
+
+
+<style>
+  #firesage-preloader {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    z-index: 999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 1.2s cubic-bezier(0.22, 1, 0.36, 1), visibility 1.2s;
+  }
+  .loader-wrapper {
+    position: relative;
+    width: 160px;
+    height: 160px;
+  }
+  .fire-core {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background: #8B0000;
+    border-radius: 50%;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 40px #FF1A1A;
+    animation: corePulse 2s infinite;
+  }
+  .fire-ring {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border: 2px solid transparent;
+    border-top-color: #FF1A1A;
+    border-radius: 50%;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    animation: spin 3s linear infinite;
+  }
+  .fire-spark {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: #FF4500;
+    border-radius: 50%;
+    box-shadow: 0 0 20px #FF1A1A;
+    animation: sparkFloat 4s infinite;
+  }
+  .fire-text {
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    font-weight: 900;
+    letter-spacing: 8px;
+    color: transparent;
+    background: linear-gradient(90deg, #8B0000, #FF1A1A);
+    -webkit-background-clip: text;
+    background-clip: text;
+    opacity: 0.8;
+  }
+  @keyframes corePulse {
+    0%, 100% { box-shadow: 0 0 40px #FF1A1A; transform: translate(-50%, -50%) scale(1); }
+    50% { box-shadow: 0 0 80px #FF4500; transform: translate(-50%, -50%) scale(1.3); }
+  }
+  @keyframes spin {
+    to { transform: translate(-50%, -50%) rotate(360deg); }
+  }
+  @keyframes sparkFloat {
+    0% { top: 20px; left: 20px; opacity: 1; }
+    100% { top: 140px; left: 140px; opacity: 0; }
+  }
+</style>
 </html>
